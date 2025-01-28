@@ -9,6 +9,7 @@ public class Cave {
 
     public void addMonster(){
         Monster addedMonster = new Monster();
+
         System.out.println("Anna hirviön tyyppi:");
         addedMonster.type = scanner.nextLine();
         System.out.println("Anna hirviön elämän määrä numerona:");
