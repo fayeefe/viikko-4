@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Cave {
-    private ArrayList<Monster> caveMonsters = new ArrayList<Monster>();
+    public ArrayList<Monster> caveMonsters = new ArrayList<Monster>();
     Scanner scanner = new Scanner(System.in);
 
     public void addMonster(){
@@ -15,6 +15,10 @@ public class Cave {
         System.out.println("Anna hirviön elämän määrä numerona:");
         addedMonster.health = Integer.parseInt(scanner.nextLine());
         caveMonsters.add(addedMonster);
+    }
+
+    public void removeMonster(int targetIndex){
+
     }
 
 }
