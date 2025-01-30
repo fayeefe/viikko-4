@@ -18,7 +18,13 @@ public class Cave {
     }
 
     public void removeMonster(int targetIndex){
-
+        
+    }
+    public void listMonsters(){
+        for (Monster monster : caveMonsters) {
+            int num = caveMonsters.indexOf(monster);
+            monster.printInfo(num);
+            }
     }
 
 }

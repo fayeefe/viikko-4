@@ -14,4 +14,7 @@ public class Monster {
             }
         }
     
+    public void printInfo(int number){
+        System.out.println(number + ": " + type + " / " + health + "HP");
+    }
 }

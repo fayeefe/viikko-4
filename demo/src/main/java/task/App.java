@@ -34,17 +34,20 @@ public class App {
                     System.out.println("");
                     break;
                 case "2":
+                    cave.listMonsters();
+                    break;
+                case "3":                    
                     System.out.println("Valitse hirviö, johon hyökätä:");
-                    for (Monster monster : cave.caveMonsters) {
-                    System.out.println(cave.caveMonsters.indexOf(monster) + ": " + monster.type + " / " + monster.health + "HP");
-                    }
-                    
+                    cave.listMonsters();
                     int inputValue = Integer.parseInt(scanner.nextLine());
                     Monster inputMonster = cave.caveMonsters.get(inputValue);
                     player.attack(inputMonster);
                     break;
-                case "3":
-                    
+                case "4":
+
+                    break;
+                case "5":
+                
                     break;
                 case "0":
                     
