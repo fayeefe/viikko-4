@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Cave {
+    Player player = new Player();
     public ArrayList<Monster> caveMonsters = new ArrayList<Monster>();
     Scanner scanner = new Scanner(System.in);
 
